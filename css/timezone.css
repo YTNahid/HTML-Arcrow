@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+
+.timezone {
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  z-index: 999;
+}
+
+.time-font {
+  font-family: 'Orbitron', sans-serif !important;
+}
+
+.timezone  .container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 700px;
+  width: 100%;
+  background: #F0F8FF;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 12px !important;
+  position: relative;
+  padding: 50px 60px 20px 20px;
+  overflow: hidden;
+}
+
+.timezone.dark .container{
+  background: #323840;
+}
+
+.timezone  .container .icons i{
+  position: absolute;
+  right: 17px;
+  top: 17px;
+  height: 30px;
+  width: 30px;
+  background: #24292D;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.timezone.dark .container .icons i{
+  background: #fff;
+  color: #323840;
+}
+
+.container .icons i.fa-sun{
+  opacity: 0;
+  pointer-events: none;
+}
+
+.timezone.dark .container .icons i.fa-sun{
+  opacity: 1;
+  pointer-events: auto;
+  font-size: 16px;
+}
+
+.timezone  .container .time{
+  display: flex;
+  align-items: center;
+}
+
+.container .time .time-colon{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.time .time-colon .am_pm{
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  font-size: 15px;
+  font-weight: 700;
+  transform: translateY(-50%);
+  letter-spacing: 1px;
+}
+
+.timezone.dark .time .time-colon .am_pm{
+  color: #fff;
+}
+
+.time .time-colon .time-text{
+  height: 70px;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: #F0F8FF;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.timezone.dark .time .time-colon .time-text{
+  background: #24292D;
+}
+
+.time .time-colon .time-text,
+.time .time-colon .colon{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.timezone.dark .time .time-text .num,
+.timezone.dark .time .colon{
+  color: #fff;
+}
+
+.time .time-colon .colon{
+  font-size: 22px;
+  margin: 0 10px;
+}
+
+.time .time-colon .time-text .text{
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.timezone.dark  .time .time-colon .text{
+  color: #fff;
+}
